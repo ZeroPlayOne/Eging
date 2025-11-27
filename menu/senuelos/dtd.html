@@ -1,4 +1,109 @@
-<!DOCTYPE html><html><head><meta charset='UTF-8'><link rel='stylesheet' href='../../STYLE/styles.css'><title>DTD</title></head><body>
+<!DOCTYPE html><html><head><meta charset='UTF-8'><link rel='stylesheet' href='../../STYLE/styles.css'><title>DTD</title>
+<style>
+.hero h2 { display:none; }
+.grid-contenedor {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+.tarjeta {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform .3s;
+}
+.tarjeta:hover {
+    transform: scale(1.05);
+}
+.tarjeta img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+}
+.tarjeta h3 {
+    padding: 15px;
+    font-size: 1.2rem;
+}
+.tarjeta a { color: inherit; text-decoration:none; display:block; }
+
+.section-title {
+    font-size: 2rem;
+    text-align: center;
+    margin: 60px 0 20px;
+    position: relative;
+    font-weight: 700;
+    color: #333;
+}
+
+.section-title::after {
+    content: "";
+    width: 80px;
+    height: 4px;
+    background: #0099cc;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 10px;
+}
+.comprar-contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 25px 0 50px;
+}
+
+.btn-comprar {
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: transform .15s, box-shadow .15s;
+}
+
+
+/* Estilo AliExpress (rojo/rosado) */
+.opcion {
+    background: linear-gradient(90deg, #ff2e63, #ff1744);
+}
+
+.btn-comprar:hover {
+    transform: scale(1.06);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+}
+
+.info-box {
+    max-width: 1150px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 25px 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.info-box strong {
+    color: #0077b6;
+}
+
+.info-box img {
+    display: block;
+    width: 100%;
+    max-width: 550px;
+    margin: 25px auto 0;
+    border-radius: 10px;
+}
+
+</style>
+</head>
+<body>
 <header>
     <div class="logo-contenedor">
         <img src="../../IMAGES/logo.png" alt="Pescar Barato" class="logo-img">
@@ -25,4 +130,34 @@
         </ul>
     </nav>
 </header>
-<section class='hero'><h2>DTD</h2></section><footer><p>© 2025 Pescar Barato</p></footer></body></html>
+
+<section class='hero'><img width="200px" src="dtd/dtd.png"></section>
+
+<div class="info-box">
+    <p>
+        Aunque por el momento no disponemos de un proveedor con precios realmente ajustados 
+        para esta sección <strong>LOW COST</strong>, sí hemos encontrado una alternativa 
+        muy interesante: poteras de la marca <strong>Letoyo</strong> con un rendimiento y 
+        diseño muy similares.
+    </p>
+</div>
+
+
+
+<h2 class="section-title">💱 Poteras Letoyo Similares a DTD Full Flash Glavoc</h2>
+<section class="grid-contenedor">
+<div class="tarjeta"><a href="detalle/f001.html"><img src="letoyo/img/poteras/letoyo-A.webp"><h3>BLACK</h3></a></div>
+<div class="tarjeta"><a href="detalle/f002.html"><img src="letoyo/img/poteras/letoyo-B.webp"><h3>RED HEAD</h3></a></div>
+<div class="tarjeta"><a href="detalle/f003.html"><img src="letoyo/img/poteras/letoyo-C.webp"><h3>GRAY</h3></a></div>
+<div class="tarjeta"><a href="detalle/f004.html"><img src="letoyo/img/poteras/letoyo-D.webp"><h3>YELLOW</h3></a></div>
+<div class="tarjeta"><a href="detalle/f005.html"><img src="letoyo/img/poteras/letoyo-E.webp"><h3>RED</h3></a></div>
+<div class="tarjeta"><a href="detalle/f006.html"><img src="letoyo/img/poteras/letoyo-F.webp"><h3>ORANGE</h3></a></div>
+<div class="tarjeta"><a href="detalle/f007.html"><img src="letoyo/img/poteras/letoyo-G.webp"><h3>GREEN</h3></a></div>
+<div class="tarjeta"><a href="detalle/f008.html"><img src="letoyo/img/poteras/letoyo-H.webp"><h3>WHITE</h3></a></div>
+</section>
+<div class="comprar-contenedor">
+    <a class="btn-comprar opcion" href="https://s.click.aliexpress.com/e/_Dn42Gjn" target="_blank">🛒 Comprar opción 1</a>
+    <a class="btn-comprar opcion" href="https://s.click.aliexpress.com/e/_DC2o6kt" target="_blank">🛒 Comprar opción 2</a>
+</div>
+<footer><p>© 2025 Pescar Barato</p></footer>
+</body></html>

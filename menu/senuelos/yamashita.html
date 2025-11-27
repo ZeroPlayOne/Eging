@@ -30,6 +30,38 @@
     font-size: 1.2rem;
 }
 .tarjeta a { color: inherit; text-decoration:none; display:block; }
+
+/* 🔥 Botón estilo AliExpress */
+.comprar-contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 25px 0 50px;
+}
+
+.btn-comprar {
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: transform .15s, box-shadow .15s;
+}
+
+
+/* Estilo AliExpress (rojo/rosado) */
+.opcion {
+    background: linear-gradient(90deg, #ff2e63, #ff1744);
+}
+
+.btn-comprar:hover {
+    transform: scale(1.06);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+}
+
+
 </style>
 </head>
 <body>
@@ -81,5 +113,10 @@
 <div class="tarjeta"><a href="detalle/f021.html"><img src="yamashita/img/f021.webp"><h3>Modelo F021</h3></a></div>
 <div class="tarjeta"><a href="detalle/f022.html"><img src="yamashita/img/f022.webp"><h3>Modelo F022</h3></a></div>
 </section>
+
+<div class="comprar-contenedor">
+    <a class="btn-comprar opcion" href="https://s.click.aliexpress.com/e/_DCmkvMN" target="_blank">🛒 Comprar opción 1</a>
+</div>
+
 <footer><p>© 2025 Pescar Barato</p></footer>
 </body></html>

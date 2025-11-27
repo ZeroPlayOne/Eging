@@ -1,4 +1,111 @@
-<!DOCTYPE html><html><head><meta charset='UTF-8'><link rel='stylesheet' href='../../STYLE/styles.css'><title>Yo-zuri</title></head><body>
+<!DOCTYPE html><html><head><meta charset='UTF-8'><link rel='stylesheet' href='../../STYLE/styles.css'><title>Yo-Zuri</title>
+<style>
+.hero h2 { display:none; }
+.grid-contenedor {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+.tarjeta {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform .3s;
+}
+.tarjeta:hover {
+    transform: scale(1.05);
+}
+.tarjeta img {
+    width: 100%;
+    height: 75px;
+    object-fit: cover;
+}
+.tarjeta h3 {
+    padding: 15px;
+    font-size: 1.2rem;
+}
+.tarjeta a { color: inherit; text-decoration:none; display:block; }
+
+.section-title {
+    font-size: 2rem;
+    text-align: center;
+    margin: 60px 0 20px;
+    position: relative;
+    font-weight: 700;
+    color: #333;
+}
+
+.section-title::after {
+    content: "";
+    width: 80px;
+    height: 4px;
+    background: #0099cc;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 10px;
+}
+.comprar-contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 25px 0 50px;
+}
+
+.btn-comprar {
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: transform .15s, box-shadow .15s;
+}
+
+
+/* Estilo AliExpress (rojo/rosado) */
+.opcion {
+    background: linear-gradient(90deg, #ff2e63, #ff1744);
+}
+
+.btn-comprar:hover {
+    transform: scale(1.06);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+}
+
+
+.info-box {
+    max-width: 1150px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 25px 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.info-box strong {
+    color: #0077b6;
+}
+
+.info-box img {
+    display: block;
+    width: 100%;
+    max-width: 550px;
+    margin: 25px auto 0;
+    border-radius: 10px;
+}
+
+
+</style>
+</head>
+<body>
 <header>
     <div class="logo-contenedor">
         <img src="../../IMAGES/logo.png" alt="Pescar Barato" class="logo-img">
@@ -25,4 +132,56 @@
         </ul>
     </nav>
 </header>
-<section class='hero'><h2>Yo-zuri</h2></section><footer><p>© 2025 Pescar Barato</p></footer></body></html>
+
+<section class='hero'><img width="200px" src="yozuri/yozuri.png"></section>
+
+<div class="info-box">
+    <p>
+        <strong>Yo-Zuri</strong> es una de las marcas líderes del mercado gracias a sus acabados 
+        de alta calidad y su eficacia contrastada. En los últimos años ha ganado terreno 
+        incluso a Yamashita, convirtiéndose en una opción imprescindible en la caja de cualquier pescador.
+    </p>
+
+    <p>
+        Aunque no hemos encontrado todavía un proveedor con precios realmente ajustados 
+        para mantener esta sección <strong>LOW COST</strong>, sí hemos localizado una alternativa 
+        muy interesante: modelos <strong>prácticamente idénticos</strong> a los 
+        <em>Squid Jig Ultra Cloth / Ultra DX</em>, con una relación calidad-precio excelente.
+    </p>
+
+    <img src="yozuri/img/yozuri-lote.png" alt="Modelos similares Yo-Zuri">
+</div>
+<div class="comprar-contenedor">
+    <a class="btn-comprar opcion" href="https://s.click.aliexpress.com/e/_c4liimBr" target="_blank">🛒 Comprar opción 1</a>
+</div>
+
+
+<h2 class="section-title">Modelos muy similares Squid Jig Ultra Cloth/ Ultra DX</h2>
+<section class="grid-contenedor">
+<div class="tarjeta"><a href="detalle/f009.html"><img src="yozuri/img/Squid Jig/SquidJig-1.webp"><h3>🔄 Squid Jig Ultra DX PK</h3></a></div>
+<div class="tarjeta"><a href="detalle/f009.html"><img src="yozuri/img/Squid Jig/SquidJig-2.webp"><h3>🔄 Squid Jig Ultra Cloth CL11*</h3></a></div>
+<div class="tarjeta"><a href="detalle/f013.html"><img src="yozuri/img/Squid Jig/SquidJig-3.webp"><h3>🔄 Squid Jig Ultra DX OG</h3></a></div>
+<div class="tarjeta"><a href="detalle/f016.html"><img src="yozuri/img/Squid Jig/SquidJig-4.webp"><h3>🔄 Squid Jig Ultra Cloth LRH</h3></a></div>
+<div class="tarjeta"><a href="detalle/f017.html"><img src="yozuri/img/Squid Jig/SquidJig-5.webp"><h3>🔄 Squid Jig Ultra Cloth CL12*</h3></a></div>
+<div class="tarjeta"><a href="detalle/f018.html"><img src="yozuri/img/Squid Jig/SquidJig-6.webp"><h3>🔄 Squid Jig Ultra DX M</h3></a></div>
+<div class="tarjeta"><a href="detalle/f019.html"><img src="yozuri/img/Squid Jig/SquidJig-7.webp"><h3>🔄 Squid Jig Ultra DX RH</h3></a></div>
+<div class="tarjeta"><a href="detalle/f020.html"><img src="yozuri/img/Squid Jig/SquidJig-8.webp"><h3>🔄 Squid Jig Ultra Cloth CL</h3></a></div>
+<div class="tarjeta"><a href="detalle/f021.html"><img src="yozuri/img/Squid Jig/SquidJig-9.webp"><h3>🔄 Modelo</h3></a></div>
+<div class="tarjeta"><a href="detalle/f022.html"><img src="yozuri/img/Squid Jig/SquidJig-10.webp"><h3>🔄 Squid Jig Ultra Cloth CLE9</h3></a></div>
+<div class="tarjeta"><a href="detalle/f001.html"><img src="yozuri/img/Squid Jig/SquidJig-A.webp"><h3>🔄 Modelo</h3></a></div>
+<div class="tarjeta"><a href="detalle/f002.html"><img src="yozuri/img/Squid Jig/SquidJig-B.webp"><h3>🔄 DTD Toro Pink</h3></a></div>
+<div class="tarjeta"><a href="detalle/f003.html"><img src="yozuri/img/Squid Jig/SquidJig-C.webp"><h3>🔄 Modelo</h3></a></div>
+<div class="tarjeta"><a href="detalle/f004.html"><img src="yozuri/img/Squid Jig/SquidJig-D.webp"><h3>🔄 YO-ZURI Squid Jig Ultra Cloth L8</h3></a></div>
+<div class="tarjeta"><a href="detalle/f005.html"><img src="yozuri/img/Squid Jig/SquidJig-E.webp"><h3>🔄 YO-ZURI Squid Jig Ultra Cloth L9</h3></a></div>
+<div class="tarjeta"><a href="detalle/f006.html"><img src="yozuri/img/Squid Jig/SquidJig-F.webp"><h3>🔄 YO-ZURI Squid Jig Ultra Cloth L11</h3></a></div>
+<div class="tarjeta"><a href="detalle/f007.html"><img src="yozuri/img/Squid Jig/SquidJig-G.webp"><h3>🔄 YO-ZURI Squid Jig Ultra Cloth L10</h3></a></div>
+<div class="tarjeta"><a href="detalle/f008.html"><img src="yozuri/img/Squid Jig/SquidJig-H.webp"><h3>🔄 YO-ZURI Squid Jig Ultra Cloth L12</h3></a></div>
+</section>
+<div class="comprar-contenedor">
+    <a class="btn-comprar opcion" href="https://s.click.aliexpress.com/e/_oFVfab5" target="_blank">🛒 Comprar opción 1</a>
+    <a class="btn-comprar opcion" href="https://s.click.aliexpress.com/e/_DF1k8Ad" target="_blank">🛒 Comprar opción 2</a>
+</div>
+
+
+<footer><p>© 2025 Pescar Barato</p></footer>
+</body></html>
