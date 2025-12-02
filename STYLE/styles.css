@@ -343,3 +343,87 @@ footer p a:hover {
     margin-top: 2px;
   }
   
+/* ================================
+   acerca de
+   ================================ */
+        .contenido-acerca {
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+        .acerca-card {
+            max-width: 800px;
+            background: #ffffffcc;
+            backdrop-filter: blur(4px);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            line-height: 1.6;
+            font-size: 1.1rem;
+            text-align: center;
+        }
+        .acerca-card h3 {
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+            color: #1e4c8f;
+        }
+		
+		
+		
+/* ================================
+   CATEGORIAS SEÑUELOS
+   ================================ */
+        .hero h2 { display:none; }
+        .grid-contenedor {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 40px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .tarjeta {
+            background: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            overflow: hidden;
+            text-align: center;
+            transition: transform .3s;
+        }
+        .tarjeta:hover { transform: scale(1.05); }
+        .tarjeta img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .tarjeta h3 {
+            padding: 15px;
+            font-size: 1.2rem;
+        }
+        .tarjeta a { color: inherit; text-decoration:none; display:block; }
+        .comprar-contenedor {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 25px 0 50px;
+        }
+       .btn-comprar {
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(90deg, #ff2e63, #ff1744); /* 🔥 aquí el color */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: transform .15s, box-shadow .15s;
+}
+.btn-comprar:hover {
+    transform: scale(1.06);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+}
+
+        .btn-comprar:hover {
+            transform: scale(1.06);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+        }

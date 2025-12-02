@@ -1,17 +1,32 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <link rel="shortcut icon" href="../IMAGES/icono.png" /></head>
-    <meta charset="UTF-8">
-    <title>Señuelos</title>
-    <link rel="stylesheet" href="../STYLE/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title>Señuelos y Jibioneras | Marcas YAMASHITA, DTD, Yo-Zuri y más | Egis Low Cost</title>
+  <meta name="description" content="Explora nuestra selección de señuelos y jibioneras de las mejores marcas: YAMASHITA, DTD, Yo-Zuri, Letoyo, Kingdom, Squid King y más. Calidad para pesca de calamar al mejor precio.">
+
+  <!-- Palabras clave opcionales -->
+  <meta name="keywords" content="señuelos, jibioneras, yamashita, dtd, yo-zuri, pesca calamar, señuelos pesca, egis low cost">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Señuelos y Jibioneras | Egis Low Cost">
+  <meta property="og:description" content="Jibioneras y señuelos de las marcas más reconocidas para pesca de calamar. Variedad, calidad y precios bajos.">
+  <meta property="og:image" content="https://tudominio.com/IMAGES/logo.png">
+  <meta property="og:type" content="website">
+
+  <link rel="shortcut icon" href="../IMAGES/icono.png" />
+  <link rel="stylesheet" href="../STYLE/styles.css">
 </head>
+
 <body>
 
 <header>
     <div class="logo-contenedor">
-        <img src="../IMAGES/logo.png" alt="Pescar Barato" class="logo-img">
-        <h1 class="logo-texto">Pescar Barato</h1>
+        <img src="../IMAGES/logo.png" alt="Egis Low Cost" class="logo-img">
+        <h1 class="logo-texto">Egis Low Cost</h1>
     </div>
 
     <nav>
@@ -32,11 +47,18 @@
             </li>
 
             <li><a href="../menu/componentes.html">Componentes</a></li>
-            <li><a href="../menu/color egis.html">Color Egis</a></li>
+            <li><a href="../menu/color-egis.html">Color Egis</a></li>
             <li><a href="../menu/acerca.html">Acerca de</a></li>
         </ul>
     </nav>
-	
+</header>
+
+<section class="hero">
+    <h1>Señuelos</h1>
+    <p>Explora las mejores marcas de jibioneras y señuelos.</p>
+</section>
+
+<!-- ESTILOS LOCALES (opcional: puedes moverlos a styles.css) -->
 <style>
 /* SOLO PARA ESTE ARCHIVO */
 
@@ -45,6 +67,8 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 25px;
+    width: 90%;
+    margin: 40px auto;
 }
 
 /* Contenedores del mismo tamaño */
@@ -57,6 +81,7 @@
     justify-content: center;
     padding: 10px;
     box-sizing: border-box;
+    position: relative;
 }
 
 /* Las imágenes NO se distorsionan */
@@ -64,49 +89,53 @@
     width: 100%;
     height: 100%;
     object-fit: contain; /* mantiene proporción */
+    display: block;
 }
 
-
+/* título sobre imagen */
+.titulo-grid {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: 4px 8px;
+  background: rgba(0,0,0,0.45);
+  border-radius: 4px;
+}
 </style>
 
-
-</header>
-
-<section class="hero">
-    <h2>Señuelos</h2>
-    <p>Explora las mejores marcas de jibioneras y señuelos.</p>
-</section>
-
-<!-- ⭐⭐⭐ MENÚ CENTRAL DE IMÁGENES ⭐⭐⭐ -->
+<!-- MENÚ CENTRAL DE IMÁGENES -->
 <section class="menu-central">
 
     <a href="../menu/senuelos/yamashita.html" class="grid-item cuadrado">
-        <img src="senuelos/yamashita/yamashita.png" alt="YAMASHITA">
+        <img src="senuelos/yamashita/yamashita.png" alt="Señuelo YAMASHITA">
         <span class="titulo-grid">YAMASHITA</span>
     </a>
 
     <a href="../menu/senuelos/dtd.html" class="grid-item cuadrado">
-        <img src="senuelos/dtd/dtd.png" alt="DTD">
+        <img src="senuelos/dtd/dtd.png" alt="Señuelo DTD">
         <span class="titulo-grid">DTD</span>
     </a>
 
     <a href="../menu/senuelos/yozuri.html" class="grid-item cuadrado">
-        <img src="senuelos/yozuri/yozuri.png" alt="YO-ZURI">
+        <img src="senuelos/yozuri/yozuri.png" alt="Señuelo YO-ZURI">
         <span class="titulo-grid">YO-ZURI</span>
     </a>
 
     <a href="../menu/senuelos/letoyo.html" class="grid-item cuadrado">
-        <img src="senuelos/letoyo/letoyo.png" alt="LETOYO">
+        <img src="senuelos/letoyo/letoyo.png" alt="Señuelo LETOYO">
         <span class="titulo-grid">LETOYO</span>
     </a>
 
     <a href="../menu/senuelos/kingdom.html" class="grid-item cuadrado">
-        <img src="senuelos/kingdom/kingdom.png" alt="KINGDOM">
+        <img src="senuelos/kingdom/kingdom.png" alt="Señuelo KINGDOM">
         <span class="titulo-grid">KINGDOM</span>
     </a>
 
     <a href="../menu/senuelos/squidking.html" class="grid-item cuadrado">
-        <img src="senuelos/squidking/squidking.png" alt="SQUID KING">
+        <img src="senuelos/squidking/squidking.png" alt="Señuelo SQUID KING">
         <span class="titulo-grid">SQUID KING</span>
     </a>
 
@@ -115,6 +144,25 @@
         <span class="titulo-grid">OTROS</span>
     </a>
 
+</section>
+<section class="descripcion-seo">
+    <h2>Señuelos y Jibioneras de las Mejores Marcas</h2>
+    <p>
+        En Egis Low Cost encontrarás una selección de señuelos y jibioneras de las marcas más reconocidas para la pesca de calamar y sepia. 
+        Trabajamos con fabricantes destacados como <strong>Yamashita, DTD, Yo-Zuri, Letoyo, Kingdom y Squid King</strong>, 
+        ofreciendo modelos eficaces a precios accesibles.
+    </p>
+
+    <p>
+        Cada marca dispone de diseños optimizados para diferentes condiciones de pesca, colores específicos, telas de calidad 
+        y gramajes que mejoran la presentación del señuelo en el agua. Nuestra colección está pensada tanto para pescadores 
+        principiantes como expertos que buscan aumentar sus resultados sin pagar de más.
+    </p>
+
+    <p>
+        Explora todas las categorías y encuentra el señuelo ideal para tu zona, temporada y estilo de pesca. 
+        Actualizamos nuestro catálogo continuamente para ofrecer siempre las mejores opciones del mercado.
+    </p>
 </section>
 
 <footer>
