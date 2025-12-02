@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../../../STYLE/styles.css">
+<title>{{MARCA}} - {{MODELO}}</title>
+
+<style>
+.hero h2 { display:none; }
+.grid-contenedor {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+.tarjeta {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform .3s;
+}
+.tarjeta:hover { transform: scale(1.05); }
+.tarjeta img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+.tarjeta h3 { padding: 15px; font-size: 1.2rem; }
+.tarjeta a { color: inherit; text-decoration:none; display:block; }
+
+.comprar-contenedor {
+    display: flex; justify-content: center; gap: 20px;
+    margin: 25px 0 50px;
+}
+.btn-comprar {
+    padding: 12px 25px; font-size: 1rem; font-weight: 600;
+    border-radius: 10px; text-decoration: none; color: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: transform .15s, box-shadow .15s;
+}
+.opcion {
+    background: linear-gradient(90deg, #ff2e63, #ff1744);
+}
+.btn-comprar:hover {
+    transform: scale(1.06);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo-contenedor">
+        <img src="../../../../IMAGES/logo.png" alt="Pescar Barato" class="logo-img">
+        <h1 class="logo-texto">Pescar Barato</h1>
+    </div>
+
+    <nav>
+        <ul class="menu">
+            <li><a href="../../../../index.html">Inicio</a></li>
+
+            <!-- SUBMENÚ SEÑUELOS -->
+            <li class="submenu-parent">
+                <a href="../../../senuelos.html">Señuelos</a>
+                <ul class="submenu">
+                    <li><a href="../../../senuelos/yamashita.html">YAMASHITA</a></li>
+                    <li><a href="../../../senuelos/dtd.html">DTD</a></li>
+                    <li><a href="../../../senuelos/yozuri.html">YO-ZURI</a></li>
+                    <li><a href="../../../senuelos/letoyo.html">LETOYO</a></li>
+                    <li><a href="../../../senuelos/kingdom.html">KINGDOM</a></li>
+                    <li><a href="../../../senuelos/squidking.html">SQUID KING</a></li>
+                    <li><a href="../../../senuelos/otros.html">OTROS</a></li>
+                </ul>
+            </li>
+
+            <li><a href="../../../componentes.html">Componentes</a></li>
+            <li><a href="../../../color egis.html">Color Egis</a></li>
+            <li><a href="../../../acerca.html">Acerca de</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- BANNER / PORTADA -->
+<section class="hero">
+    <img width="200px" src="{{RUTA_IMAGEN_MARCA}}" alt="{{MARCA}}">
+</section>
+
+<section class="detalle-egi">
+	
+    <!-- IMAGEN DEL MODELO -->
+    <img src="{{RUTA_IMAGEN_PRODUCTO}}" alt="{{MODELO}}">
+
+    <!-- CARACTERÍSTICAS -->
+    <div class="bloque">
+        <h2>🎨 Características</h2>
+        <ul>
+            {{CARACTERISTICA_1}}
+            {{CARACTERISTICA_2}}
+            {{CARACTERISTICA_3}}
+            {{CARACTERISTICA_4}}
+            {{CARACTERISTICA_5}}
+        </ul>
+    </div>
+
+    <!-- CONDICIONES IDEALES -->
+    <div class="bloque">
+        <h2>🌤️ Condiciones ideales de uso</h2>
+        <ul>
+            {{CONDICION_1}}
+            {{CONDICION_2}}
+            {{CONDICION_3}}
+            {{CONDICION_4}}
+            {{CONDICION_5}}
+        </ul>
+    </div>
+
+    <!-- COMPORTAMIENTO -->
+    <div class="bloque">
+        <h2>🧠 Comportamiento esperado</h2>
+        <ul>
+            {{COMPORTAMIENTO_1}}
+            {{COMPORTAMIENTO_2}}
+            {{COMPORTAMIENTO_3}}
+            {{COMPORTAMIENTO_4}}
+        </ul>
+    </div>
+
+    <!-- TABLA DE EFECTIVIDAD -->
+    <div class="bloque resumen">
+        <h2>⚙️ Resumen práctico</h2>
+
+        <table>
+            <tr><th>Condición</th><th>Eficiencia</th></tr>
+            {{TABLA_FILAS}}
+        </table>
+    </div>
+</section>
+
+<!-- BOTONES DE COMPRA -->
+<div class="comprar-contenedor">
+    <a class="btn-comprar opcion" href="{{LINK_COMPRA_1}}" target="_blank">🛒 Comprar opción 1</a>
+    {{BOTON_COMPRA_2}}
+</div>
+
+<footer>
+    <p>© 2025 Pescar Barato</p>
+</footer>
+
+</body>
+</html>
