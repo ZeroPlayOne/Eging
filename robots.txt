@@ -1,0 +1,16 @@
+# Bloquea carpetas privadas (si no tienes, puedes omitirlo)
+User-agent: *
+Disallow: /private/
+Disallow: /admin/
+Disallow: /cgi-bin/
+
+# Permite todo lo demás
+Allow: /
+
+# Indica la ubicación de tu sitemap
+Sitemap: https://www.egislowcost.es/sitemap.xml
+
+# Reglas opcionales para Googlebot
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
