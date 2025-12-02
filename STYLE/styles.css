@@ -1,11 +1,15 @@
-/* ESTILO GENERAL */
+/* ================================
+   ESTILO GENERAL
+   ================================ */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: #f5f5f5;
 }
 
-/* HEADER MODERNO */
+/* ================================
+   HEADER MODERNO
+   ================================ */
 header {
   background: linear-gradient(135deg, #0a4d8c, #0f6fb8);
   padding: 25px 20px 30px;
@@ -20,7 +24,9 @@ header {
   border-bottom: 1px solid rgba(255,255,255,0.15);
 }
 
-/* LOGO */
+/* ================================
+   LOGO
+   ================================ */
 .logo-contenedor {
   display: flex;
   justify-content: center;
@@ -35,12 +41,13 @@ header {
   filter: drop-shadow(0 4px 10px rgba(0,0,0,0.25));
 }
 
-/* OCULTAR NOMBRE SI NO SE USA */
 .logo-texto {
-  display: none;
+  display: none; /* Ocultar nombre si no se usa */
 }
 
-/* MENU SUPERIOR MODERNO Y CENTRADO */
+/* ================================
+   MENÚ SUPERIOR
+   ================================ */
 nav {
   width: 100%;
   display: flex;
@@ -53,6 +60,7 @@ nav {
   margin: 0;
   display: flex;
   gap: 35px;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -72,7 +80,9 @@ nav {
   padding: 10px 10px;
 }
 
-/* SUBMENU */
+/* ================================
+   SUBMENU
+   ================================ */
 .submenu-parent {
   position: relative;
 }
@@ -91,7 +101,6 @@ nav {
   min-width: 230px;
   border-radius: 10px;
   box-shadow: 0 8px 22px rgba(0,0,0,0.20);
-  animation: fadeIn .25s ease-out;
 }
 
 .submenu li a {
@@ -111,26 +120,18 @@ nav {
   display: block;
 }
 
-/* ANIMACIÓN SUBMENU */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translate(-50%, 15px);
-  }
-  to {
-    opacity: 1;
-    transform: translate(-50%, 0);
-  }
-}
-
-/* HERO */
+/* ================================
+   HERO
+   ================================ */
 .hero {
-  padding: 20px 20px;
+  padding: 20px;
   text-align: center;
   background: #cfe3f5;
 }
 
-/* FOOTER */
+/* ================================
+   FOOTER
+   ================================ */
 footer {
   text-align: center;
   padding: 20px;
@@ -139,7 +140,9 @@ footer {
   margin-top: 40px;
 }
 
-/* MENU CENTRAL (GRID PRINCIPAL) */
+/* ================================
+   MENU CENTRAL (GRID)
+   ================================ */
 .menu-central {
   width: 90%;
   margin: 40px auto;
@@ -165,7 +168,6 @@ footer {
   transform: scale(1.05);
 }
 
-/* TÍTULOS DE LAS IMÁGENES */
 .titulo {
   position: absolute;
   bottom: 15px;
@@ -176,109 +178,55 @@ footer {
   text-shadow: 0 3px 8px rgba(0,0,0,0.7);
 }
 
-/* TAMAÑOS ESPECÍFICOS */
-.grande {
-  grid-column: span 2;
-  height: 350px;
-}
+/* Tamaños específicos */
+.grande { grid-column: span 2; height: 350px; }
+.horizontal { grid-column: span 2; height: 250px; }
+.cuadrado { height: 250px; }
 
-.horizontal {
-  grid-column: span 2;
-  height: 250px;
-}
-
-.cuadrado {
-  height: 250px;
-}
-
-/* ----------------------------------------
-   MEDIA QUERIES PARA DISPOSITIVOS MÓVILES
-   ---------------------------------------- */
-
-/* Menú hamburguesa para pantallas pequeñas */
+/* ================================
+   MEDIA QUERIES PARA MÓVIL
+   ================================ */
 @media (max-width: 768px) {
 
-  /* Ajustar el header y el logo */
+  /* Ajustes header y logo */
   header {
     padding: 20px 15px;
   }
-
   .logo-img {
     height: 60px;
   }
 
-  /* Cambiar la dirección del menú en móviles */
-  nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
-
+  /* Menú se coloca vertical y submenús también */
   .menu {
-    display: none;
     flex-direction: column;
-    gap: 15px;
-    width: 100%;
-    padding: 10px 0;
-    background-color: #0a4d8c;
+    gap: 10px;
   }
 
   .menu a {
     font-size: 1.2rem;
-    padding: 15px;
+    padding: 12px 10px;
     text-align: center;
-    width: 100%;
   }
 
-  .menu-toggle {
-    display: block;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
+  .submenu {
+    position: static;
+    transform: none;
+    border-radius: 5px;
   }
 
-  .menu-toggle .menu-icon {
-    width: 30px;
-    height: 3px;
-    background-color: white;
-    position: relative;
+  .submenu li a {
+    padding-left: 20px;
   }
 
-  .menu-toggle .menu-icon::before,
-  .menu-toggle .menu-icon::after {
-    content: "";
-    width: 30px;
-    height: 3px;
-    background-color: white;
-    position: absolute;
-    left: 0;
-  }
-
-  .menu-toggle .menu-icon::before {
-    top: -8px;
-  }
-
-  .menu-toggle .menu-icon::after {
-    top: 8px;
-  }
-
-  /* Mostrar el menú al hacer clic */
-  .menu.show {
-    display: flex;
-  }
-
-  /* Ajustes en la sección hero */
+  /* Hero ajustes */
   .hero {
     padding: 15px;
   }
-
   .hero p {
     font-size: 1.2rem;
   }
 
-  /* Ajustes en el menú central */
+  /* Menu central ajustes */
   .menu-central {
     grid-template-columns: 1fr 1fr;
     grid-gap: 15px;
@@ -290,16 +238,5 @@ footer {
 
   .titulo {
     font-size: 1.4rem;
-  }
-}
-/* Ocultar el botón del menú hamburguesa en pantallas grandes */
-.menu-toggle {
-  display: none;
-}
-
-/* Mostrar el ícono solo en pantallas pequeñas (menos de 768px) */
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
   }
 }
