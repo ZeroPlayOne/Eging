@@ -168,6 +168,11 @@ nav {
   font-size: 2rem;
   line-height: 1.3;
 }
+.hero h2 {
+  margin: 0;
+  line-height: 1.3;
+}
+
 
 /* ================================
    GRID CENTRAL DE PRODUCTOS
@@ -373,7 +378,7 @@ footer p a:hover {
 /* ================================
    CATEGORIAS SEÑUELOS
    ================================ */
-        .hero h2 { display:none; }
+        
         .grid-contenedor {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
