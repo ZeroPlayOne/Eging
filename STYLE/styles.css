@@ -533,3 +533,48 @@ footer p a:hover {
 .boton-aliexpress .icono {
     font-size: 22px;
 }
+
+
+
+/* INFO BOX *DTD */
+
+.info-box {
+    max-width: 1150px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 25px 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.info-box strong {
+    color: #0077b6;
+}
+
+.info-box img {
+    display: block;
+    width: 100%;
+    max-width: 550px;
+    margin: 25px auto 0;
+    border-radius: 10px;
+}
+.section-title {
+    font-size: 2rem;
+    text-align: center;
+    margin: 60px 0 20px;
+    position: relative;
+    font-weight: 700;
+    color: #333;
+}
+
+.section-title::after {
+    content: "";
+    width: 80px;
+    height: 4px;
+    background: #0099cc;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 10px;
+}
