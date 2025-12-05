@@ -1,55 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-<meta charset="UTF-8">
-<link rel="stylesheet" href="../../../../STYLE/styles.css">
-<title>{{MARCA}} - {{MODELO}}</title>
+    <meta charset="UTF-8">
 
-<style>
-.hero h2 { display:none; }
-.grid-contenedor {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    padding: 40px;
-    max-width: 1200px;
-    margin: auto;
-}
-.tarjeta {
-    background: #ffffff;
-    border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    overflow: hidden;
-    text-align: center;
-    transition: transform .3s;
-}
-.tarjeta:hover { transform: scale(1.05); }
-.tarjeta img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-}
-.tarjeta h3 { padding: 15px; font-size: 1.2rem; }
-.tarjeta a { color: inherit; text-decoration:none; display:block; }
+    <!-- SEO básico -->
+    <title>Letoyo – Modelo X</title>
+    <meta name="description" content="Descripción del egi Letoyo modelo X: características, rendimiento, condiciones ideales y comportamiento del señuelo.">
+    <meta name="robots" content="index, follow">
 
-.comprar-contenedor {
-    display: flex; justify-content: center; gap: 20px;
-    margin: 25px 0 50px;
-}
-.btn-comprar {
-    padding: 12px 25px; font-size: 1rem; font-weight: 600;
-    border-radius: 10px; text-decoration: none; color: white;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    transition: transform .15s, box-shadow .15s;
-}
-.opcion {
-    background: linear-gradient(90deg, #ff2e63, #ff1744);
-}
-.btn-comprar:hover {
-    transform: scale(1.06);
-    box-shadow: 0 6px 16px rgba(0,0,0,0.25);
-}
-</style>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../../../../IMAGES/icono.png">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://tudominio.com/senuelos/letoyo/info/modelo-X/modelo-X.html">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="../../../../STYLE/styles.css">
+
+    <!-- Schema Product -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Product",
+      "name": "Letoyo Modelo X",
+      "image": "https://tudominio.com/senuelos/letoyo/info/modelo-X/modelo-X.png",
+      "brand": "Letoyo",
+      "description": "Señuelo Letoyo modelo X con acabado textil, luminiscencia y diseño optimizado para distintas condiciones de pesca.",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://s.click.aliexpress.com/e/_XXXXXXX",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock"
+      }
+    }
+    </script>
 </head>
 
 <body>
@@ -59,12 +43,9 @@
         <img src="../../../../IMAGES/logo.png" alt="Pescar Barato" class="logo-img">
         <h1 class="logo-texto">Pescar Barato</h1>
     </div>
-
     <nav>
         <ul class="menu">
             <li><a href="../../../../index.html">Inicio</a></li>
-
-            <!-- SUBMENÚ SEÑUELOS -->
             <li class="submenu-parent">
                 <a href="../../../senuelos.html">Señuelos</a>
                 <ul class="submenu">
@@ -77,79 +58,80 @@
                     <li><a href="../../../senuelos/otros.html">OTROS</a></li>
                 </ul>
             </li>
-
             <li><a href="../../../componentes.html">Componentes</a></li>
-            <li><a href="../../../color egis.html">Color Egis</a></li>
+            <li><a href="../../../color-egis.html">Color Egis</a></li>
             <li><a href="../../../acerca.html">Acerca de</a></li>
         </ul>
     </nav>
 </header>
 
-<!-- BANNER / PORTADA -->
+<!-- Logo de la marca LETOYO -->
 <section class="hero">
-    <img width="200px" src="{{RUTA_IMAGEN_MARCA}}" alt="{{MARCA}}">
+    <img width="200px" src="../letoyo.png" alt="Letoyo - Serie de egis">
 </section>
 
 <section class="detalle-egi">
-	
-    <!-- IMAGEN DEL MODELO -->
-    <img src="{{RUTA_IMAGEN_PRODUCTO}}" alt="{{MODELO}}">
 
-    <!-- CARACTERÍSTICAS -->
+    <!-- Imagen principal del modelo -->
+    <div class="imagen-principal">
+        <img src="modelo-X.png" alt="Letoyo Modelo X">
+    </div>
+
+    <!-- Características -->
     <div class="bloque">
         <h2>🎨 Características</h2>
         <ul>
-            {{CARACTERISTICA_1}}
-            {{CARACTERISTICA_2}}
-            {{CARACTERISTICA_3}}
-            {{CARACTERISTICA_4}}
-            {{CARACTERISTICA_5}}
+            <li><strong>Color base:</strong> (descripción aquí).</li>
+            <li><strong>Ojos:</strong> (descripción aquí).</li>
+            <li><strong>Brillo:</strong> (descripción aquí).</li>
+            <li><strong>Acabado:</strong> (descripción aquí).</li>
         </ul>
     </div>
 
-    <!-- CONDICIONES IDEALES -->
+    <!-- Condiciones ideales -->
     <div class="bloque">
         <h2>🌤️ Condiciones ideales de uso</h2>
         <ul>
-            {{CONDICION_1}}
-            {{CONDICION_2}}
-            {{CONDICION_3}}
-            {{CONDICION_4}}
-            {{CONDICION_5}}
+            <li>Condición 1</li>
+            <li>Condición 2</li>
+            <li>Condición 3</li>
+            <li>Condición 4</li>
         </ul>
     </div>
 
-    <!-- COMPORTAMIENTO -->
+    <!-- Comportamiento -->
     <div class="bloque">
         <h2>🧠 Comportamiento esperado</h2>
         <ul>
-            {{COMPORTAMIENTO_1}}
-            {{COMPORTAMIENTO_2}}
-            {{COMPORTAMIENTO_3}}
-            {{COMPORTAMIENTO_4}}
+            <li>Punto 1</li>
+            <li>Punto 2</li>
+            <li>Punto 3</li>
+            <li>Punto 4</li>
         </ul>
     </div>
 
-    <!-- TABLA DE EFECTIVIDAD -->
+    <!-- Resumen práctico -->
     <div class="bloque resumen">
         <h2>⚙️ Resumen práctico</h2>
 
         <table>
             <tr><th>Condición</th><th>Eficiencia</th></tr>
-            {{TABLA_FILAS}}
+            <tr><td>Ejemplo</td><td>🟢 Alta</td></tr>
+            <tr><td>Ejemplo</td><td>🟡 Media</td></tr>
+            <tr><td>Ejemplo</td><td>🔴 Baja</td></tr>
         </table>
     </div>
+
 </section>
 
-<!-- BOTONES DE COMPRA -->
+<!-- Botones de compra securizados -->
 <div class="comprar-contenedor">
-    <a class="btn-comprar opcion" href="{{LINK_COMPRA_1}}" target="_blank">🛒 Comprar opción 1</a>
-    {{BOTON_COMPRA_2}}
+    <a class="btn-comprar opcion" href="https://s.click.aliexpress.com/e/_XXXXXXX" target="_blank" rel="noopener noreferrer">Comprar opción 1</a>
+    <a class="btn-comprar opcion" href="https://s.click.aliexpress.com/e/_XXXXXXX" target="_blank" rel="noopener noreferrer">Comprar opción 2</a>
+    <a class="btn-comprar opcion" href="https://s.click.aliexpress.com/e/_XXXXXXX" target="_blank" rel="noopener noreferrer">Comprar opción 3</a>
 </div>
 
-<footer>
-    <p>© 2025 Egis Low Cost</p>
-</footer>
+<footer><p>© 2025 Egis Low Cost</p></footer>
 
 </body>
 </html>

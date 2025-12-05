@@ -580,3 +580,97 @@ footer p a:hover {
     margin: 10px auto 0;
     border-radius: 10px;
 }
+
+
+
+
+/* 🐙 BLOQUE DESCRIPTIVO DEL EGI */
+.detalle-egi {
+    max-width: 900px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding: 0 20px;
+}
+
+/* Imagen principal centrada */
+.detalle-egi .imagen-principal {
+    text-align: center;
+}
+.detalle-egi .imagen-principal img {
+    width: 260px;
+    max-width: 100%;
+    border-radius: 18px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    transition: transform .3s ease;
+}
+.detalle-egi .imagen-principal img:hover {
+    transform: scale(1.05);
+}
+
+/* Bloques / tarjetas */
+.detalle-egi .bloque {
+    background: #fff;
+    padding: 25px 28px;
+    border-radius: 18px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    border-left: 6px solid #ff2e63;
+    transition: .15s;
+}
+.detalle-egi .bloque:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 26px rgba(0,0,0,0.12);
+}
+
+/* Títulos */
+.detalle-egi h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.45rem;
+    color: #292929;
+}
+
+/* Listas */
+.detalle-egi ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.detalle-egi ul li {
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+}
+.detalle-egi ul li::before {
+    content: "✔ ";
+    color: #ff2e63;
+    font-weight: bold;
+}
+
+/* TABLA RESUMEN */
+.detalle-egi table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 1.05rem;
+}
+.detalle-egi table th {
+    background: #ffe3ea;
+    padding: 10px;
+    font-size: 1.1rem;
+    border-bottom: 2px solid #ffb6c6;
+}
+.detalle-egi table td {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .detalle-egi .bloque {
+        padding: 20px;
+    }
+    .detalle-egi h2 {
+        font-size: 1.3rem;
+    }
+}
