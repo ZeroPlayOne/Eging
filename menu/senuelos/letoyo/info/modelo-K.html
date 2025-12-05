@@ -1,0 +1,256 @@
+<!DOCTYPE html><html><head><meta charset='UTF-8'><link rel='stylesheet' href='../../../../STYLE/styles.css'><title>Letoyo</title>
+<style>
+.hero h2 { display:none; }
+.grid-contenedor {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+.tarjeta {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform .3s;
+}
+.tarjeta:hover {
+    transform: scale(1.05);
+}
+.tarjeta img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+.tarjeta h3 {
+    padding: 15px;
+    font-size: 1.2rem;
+}
+.tarjeta a { color: inherit; text-decoration:none; display:block; }
+
+/* 🔥 Botón estilo AliExpress */
+.comprar-contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 25px 0 50px;
+}
+
+.btn-comprar {
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: transform .15s, box-shadow .15s;
+}
+
+
+/* Estilo AliExpress (rojo/rosado) */
+.opcion {
+    background: linear-gradient(90deg, #ff2e63, #ff1744);
+}
+
+.btn-comprar:hover {
+    transform: scale(1.06);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+}
+
+/* 🐙 BLOQUE DESCRIPTIVO DEL EGI */
+.detalle-egi {
+    max-width: 900px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding: 0 20px;
+}
+
+/* Imagen principal centrada */
+.detalle-egi .imagen-principal {
+    text-align: center;
+}
+.detalle-egi .imagen-principal img {
+    width: 260px;
+    max-width: 100%;
+    border-radius: 18px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    transition: transform .3s ease;
+}
+.detalle-egi .imagen-principal img:hover {
+    transform: scale(1.05);
+}
+
+/* Bloques / tarjetas */
+.detalle-egi .bloque {
+    background: #fff;
+    padding: 25px 28px;
+    border-radius: 18px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    border-left: 6px solid #ff2e63;
+    transition: .15s;
+}
+.detalle-egi .bloque:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 26px rgba(0,0,0,0.12);
+}
+
+/* Títulos */
+.detalle-egi h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.45rem;
+    color: #292929;
+}
+
+/* Listas */
+.detalle-egi ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.detalle-egi ul li {
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+}
+.detalle-egi ul li::before {
+    content: "✔ ";
+    color: #ff2e63;
+    font-weight: bold;
+}
+
+/* TABLA RESUMEN */
+.detalle-egi table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 1.05rem;
+}
+.detalle-egi table th {
+    background: #ffe3ea;
+    padding: 10px;
+    font-size: 1.1rem;
+    border-bottom: 2px solid #ffb6c6;
+}
+.detalle-egi table td {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .detalle-egi .bloque {
+        padding: 20px;
+    }
+    .detalle-egi h2 {
+        font-size: 1.3rem;
+    }
+}
+
+</style>
+</head>
+<body>
+<header>
+    <div class="logo-contenedor">
+        <img src="../../../../IMAGES/logo.png" alt="Pescar Barato" class="logo-img">
+        <h1 class="logo-texto">Pescar Barato</h1>
+    </div>
+    <nav>
+        <ul class="menu">
+            <li><a href="../../../../index.html">Inicio</a></li>
+            <li class="submenu-parent">
+                <a href="../../../senuelos.html">Señuelos</a>
+                <ul class="submenu">
+                    <li><a href="../../../senuelos/yamashita.html">YAMASHITA</a></li>
+                    <li><a href="../../../senuelos/dtd.html">DTD</a></li>
+                    <li><a href="../../../senuelos/yozuri.html">YO-ZURI</a></li>
+                    <li><a href="../../../senuelos/letoyo.html">LETOYO</a></li>
+                    <li><a href="../../../senuelos/kingdom.html">KINGDOM</a></li>
+                    <li><a href="../../../senuelos/squidking.html">SQUID KING</a></li>
+                    <li><a href="../../../senuelos/otros.html">OTROS</a></li>
+                </ul>
+            </li>
+            <li><a href="../../../componentes.html">Componentes</a></li>
+            <li><a href="../../../color-egis.html">Color Egis</a></li>
+            <li><a href="../../../acerca.html">Acerca de</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class='hero'><img width="200px" src="../../letoyo/letoyo.png"></section>
+
+
+
+<section class="detalle-egi">
+
+    <!-- Imagen destacada del modelo -->
+    <div class="imagen-principal">
+        <img src="modelo-K.png" alt="Letoyo Egi">
+    </div>
+
+    <!-- Características -->
+    <div class="bloque">
+        <h2>🎨 Características</h2>
+        <ul>
+            <li><strong>Color base:</strong> Blanco nacarado con leves reflejos azulados en la parte dorsal, aportando un acabado elegante y de alta visibilidad. Es un patrón clásico y muy efectivo en aguas claras o cuando los calamares están cazando activamente.</li>
+            <li><strong>Ojos:</strong> Oscuros, discretos, que refuerzan la naturalidad del conjunto sin generar distracción excesiva.</li>
+            <li><strong>Brillo:</strong> Luminiscencia verde intensa, uniforme y de gran alcance. Este tipo de brillo destaca especialmente en aguas profundas o durante la noche, manteniendo la silueta visible durante largos periodos </li>
+            <li><strong>Acabado:</strong> Malla blanca translúcida con textura trenzada que refleja la luz ambiente, generando un efecto “escama perlada”. Muy útil en días soleados o con algo de claridad bajo el agua.</li>
+        </ul>
+    </div>
+
+    <!-- Condiciones ideales -->
+    <div class="bloque">
+        <h2>🌤️ Condiciones ideales de uso</h2>
+        <ul>
+            <li>☀️ <strong>Día soleado o aguas claras:</strong> Excelente desempeño; el blanco perlado se percibe con fuerza, pero sigue siendo natural y creíble para el calamar.</li>
+            <li>☁️ <strong>Días nublados o aguas ligeramente turbias:</strong> Mantiene buena presencia gracias al contraste del blanco con el entorno y a la capacidad reflectante de la malla.</li>
+            <li>🌅 <strong>Atardecer o amanecer:</strong> Muy eficaz por su capacidad de captar los últimos rayos de luz y proyectarlos con efecto perlado.</li>
+            <li>🌙 <strong>Noche o baja visibilidad:</strong> Su luminiscencia verde le da una ventaja clara frente a otros Egis neutros, funcionando incluso en aguas muy oscuras.</li>
+            <li>🪸 <strong>Fondos rocosos o mixtos:</strong> Destaca con claridad sobre fondos claros, sin parecer artificial, lo que provoca ataques por curiosidad o instinto.</li>
+
+        </ul>
+    </div>
+
+    <!-- Comportamiento -->
+    <div class="bloque">
+        <h2>🧠 Comportamiento esperado</h2>
+        <ul>
+            <li>👉 Egi de atracción visual equilibrada, que combina naturalidad con alta visibilidad nocturna.</li>
+            <li>👉 Ideal para calamares activos, aunque también efectivo con ejemplares pasivos por su aspecto limpio y realista.</li>
+            <li>👉 Su cuerpo blanco y brillo verde actúan como estímulos complementarios: luz natural durante el día y luminiscencia persistente en la oscuridad.</li>
+            <li>👉 Muy versátil en diferentes escenarios, especialmente cuando el agua está clara o con poca turbidez.</li>
+        </ul>
+    </div>
+
+    <!-- Resumen práctico -->
+    <div class="bloque resumen">
+        <h2>⚙️ Resumen práctico</h2>
+
+        <table>
+            <tr><th>Condición</th><th>Eficiencia</th></tr>
+            <tr><td>☀️🌊 Día soleado / agua clara</td><td>🟢🟢 Muy alta</td></tr>
+            <tr><td>☁️💙 Día nublado / aguas azules</td><td>🟢 alta</td></tr>
+            <tr><td>🌙🌑 Noche / aguas oscuras</td><td>🟢🟢 Muy alta</td></tr>
+            <tr><td>🦑😴 Calamares pasivos</td><td>🟢 alta</td></tr>
+            <tr><td>🦑🔥 Calamares agresivos</td><td>🟢🟢 Muy alta</td></tr>
+        </table>
+    </div>
+
+</section>
+
+
+
+
+<div class="comprar-contenedor">
+
+    <a class="btn-comprar opcion" href="https://s.click.aliexpress.com/e/_DCgzW5b" target="_blank">Comprar</a>
+</div>
+
+<footer><p>© 2025 Egis Low Cost</p></footer>
+</body></html>
