@@ -674,3 +674,12 @@ footer p a:hover {
         font-size: 1.3rem;
     }
 }
+
+/* descripcion-rapida-egi */
+.descripcion-rapida-egi {
+    margin-top: 8px;
+    font-size: 0.95rem;
+    color: #444;
+    font-style: italic;
+    text-align: center;
+}
