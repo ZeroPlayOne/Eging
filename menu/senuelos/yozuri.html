@@ -24,27 +24,49 @@
     <link rel="stylesheet" href='../../STYLE/styles.css'>
 
     <style>
-        .tarjeta {
-            background: #ffffff;
-            border-radius: 15px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            overflow: hidden;
-            text-align: center;
-            transition: transform .3s;
-        }
-        .tarjeta:hover {
-            transform: scale(1.05);
-        }
-        .tarjeta img {
-            width: 100%;
-            height: 75px;
-            object-fit: cover;
-        }
-        .tarjeta h3 {
-            padding: 15px;
-            font-size: 1.2rem;
-        }
-        .tarjeta a { color: inherit; text-decoration:none; display:block; }
+.grid-contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* contenido desde arriba */
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform .3s;
+}
+
+.tarjeta:hover { transform: scale(1.05); }
+
+.tarjeta a {
+    color: inherit;
+    text-decoration:none;
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* hace que el enlace llene la tarjeta */
+}
+
+.tarjeta img {
+    width: 100%;
+    height: auto; /* mantiene proporción real */
+    object-fit: contain;
+}
+
+.tarjeta h3 {
+    padding: 15px 10px;
+    font-size: 1.2rem;
+    margin-top: auto; /* empuja el título hacia abajo si hay espacio */
+}
+
     </style>
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-TFX11RL5QP"></script>
@@ -101,15 +123,15 @@
 
     <h2 class="section-title">Modelos similares Squid Jig Ultra Cloth / Ultra DX</h2>
     <section class="grid-contenedor">
-        <div class="tarjeta"><a href="detalle/f009.html"><img src="yozuri/img/Squid Jig/SquidJig-1.webp" alt="Squid Jig Ultra DX PK"><h3>Squid Jig Ultra DX PK</h3></a></div>
-        <div class="tarjeta"><a href="detalle/f010.html"><img src="yozuri/img/Squid Jig/SquidJig-2.webp" alt="Squid Jig Ultra Cloth CL11"><h3>Squid Jig Ultra Cloth CL11</h3></a></div>
-        <div class="tarjeta"><a href="detalle/f013.html"><img src="yozuri/img/Squid Jig/SquidJig-3.webp" alt="Squid Jig Ultra DX OG"><h3>Squid Jig Ultra DX OG</h3></a></div>
-        <div class="tarjeta"><a href="detalle/f016.html"><img src="yozuri/img/Squid Jig/SquidJig-4.webp" alt="Squid Jig Ultra Cloth LRH"><h3>Squid Jig Ultra Cloth LRH</h3></a></div>
-        <div class="tarjeta"><a href="detalle/f017.html"><img src="yozuri/img/Squid Jig/SquidJig-5.webp" alt="Squid Jig Ultra Cloth CL12"><h3>Squid Jig Ultra Cloth CL12</h3></a></div>
-        <div class="tarjeta"><a href="detalle/f018.html"><img src="yozuri/img/Squid Jig/SquidJig-6.webp" alt="Squid Jig Ultra DX M"><h3>Squid Jig Ultra DX M</h3></a></div>
-        <div class="tarjeta"><a href="detalle/f019.html"><img src="yozuri/img/Squid Jig/SquidJig-7.webp" alt="Squid Jig Ultra DX RH"><h3>Squid Jig Ultra DX RH</h3></a></div>
-        <div class="tarjeta"><a href="detalle/f020.html"><img src="yozuri/img/Squid Jig/SquidJig-8.webp" alt="Squid Jig Ultra Cloth CL"><h3>Squid Jig Ultra Cloth CL</h3></a></div>
-        <div class="tarjeta"><a href="detalle/f022.html"><img src="yozuri/img/Squid Jig/SquidJig-10.webp" alt="Squid Jig Ultra Cloth CLE9"><h3>Squid Jig Ultra Cloth CLE9</h3></a></div>
+        <div class="tarjeta"><a href="https://s.click.aliexpress.com/e/_oFVfab5"><img src="yozuri/img/Squid-Jig/SquidJig-1.webp" alt="Squid Jig Ultra DX PK"><h3>Squid Jig Ultra DX PK</h3></a></div>
+        <div class="tarjeta"><a href="https://s.click.aliexpress.com/e/_oFVfab5"><img src="yozuri/img/Squid-Jig/SquidJig-2.webp" alt="Squid Jig Ultra Cloth CL11"><h3>Squid Jig Ultra Cloth CL11</h3></a></div>
+        <div class="tarjeta"><a href="https://s.click.aliexpress.com/e/_oFVfab5"><img src="yozuri/img/Squid-Jig/SquidJig-3.webp" alt="Squid Jig Ultra DX OG"><h3>Squid Jig Ultra DX OG</h3></a></div>
+        <div class="tarjeta"><a href="https://s.click.aliexpress.com/e/_oFVfab5"><img src="yozuri/img/Squid-Jig/SquidJig-4.webp" alt="Squid Jig Ultra Cloth LRH"><h3>Squid Jig Ultra Cloth LRH</h3></a></div>
+        <div class="tarjeta"><a href="https://s.click.aliexpress.com/e/_oFVfab5"><img src="yozuri/img/Squid-Jig/SquidJig-5.webp" alt="Squid Jig Ultra Cloth CL12"><h3>Squid Jig Ultra Cloth CL12</h3></a></div>
+        <div class="tarjeta"><a href="https://s.click.aliexpress.com/e/_oFVfab5"><img src="yozuri/img/Squid-Jig/SquidJig-6.webp" alt="Squid Jig Ultra DX M"><h3>Squid Jig Ultra DX M</h3></a></div>
+        <div class="tarjeta"><a href="https://s.click.aliexpress.com/e/_oFVfab5"><img src="yozuri/img/Squid-Jig/SquidJig-7.webp" alt="Squid Jig Ultra DX RH"><h3>Squid Jig Ultra DX RH</h3></a></div>
+        <div class="tarjeta"><a href="https://s.click.aliexpress.com/e/_oFVfab5"><img src="yozuri/img/Squid-Jig/SquidJig-8.webp" alt="Squid Jig Ultra Cloth CL"><h3>Squid Jig Ultra Cloth CL</h3></a></div>
+        <div class="tarjeta"><a href="https://s.click.aliexpress.com/e/_oFVfab5"><img src="yozuri/img/Squid-Jig/SquidJig-10.webp" alt="Squid Jig Ultra Cloth CLE9"><h3>Squid Jig Ultra Cloth CLE9</h3></a></div>
     </section>
 
     <div class="comprar-contenedor">

@@ -23,7 +23,7 @@
 
 .grid-contenedor {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
     padding: 40px;
     max-width: 1200px;
@@ -31,6 +31,9 @@
 }
 
 .tarjeta {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* fuerza que la franja esté abajo */
     background: #ffffff;
     border-radius: 15px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -43,8 +46,8 @@
 
 .tarjeta img {
     width: 100%;
-    height: 100px;
-    object-fit: cover;
+    height: auto; /* mantiene la proporción real */
+    object-fit: contain; /* asegura que se vea completa */
 }
 
 /* FRANJA AMARILLA FINAL */
@@ -55,6 +58,8 @@
     font-size: 0.95rem;
     font-weight: 600;
     border-top: 1px solid rgba(0,0,0,0.15);
+	margin-top: auto
+	justify-content: space-between
 }
 
 .tarjeta h3 {

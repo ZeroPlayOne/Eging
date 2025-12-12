@@ -37,7 +37,7 @@
 
 .grid-contenedor {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
     padding: 40px;
     max-width: 1200px;
@@ -45,6 +45,9 @@
 }
 
 .tarjeta {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* fuerza que la franja esté abajo */
     background: #ffffff;
     border-radius: 15px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -57,8 +60,8 @@
 
 .tarjeta img {
     width: 100%;
-    height: 100px;
-    object-fit: cover;
+    height: auto; /* mantiene la proporción real */
+    object-fit: contain; /* asegura que se vea completa */
 }
 
 /* FRANJA AMARILLA FINAL */
@@ -69,6 +72,8 @@
     font-size: 0.95rem;
     font-weight: 600;
     border-top: 1px solid rgba(0,0,0,0.15);
+	margin-top: auto
+	justify-content: space-between
 }
 
 .tarjeta h3 {
@@ -194,23 +199,23 @@
 
 <section class="grid-contenedor">
 <!-- JIBIONERAS -->
-<div class="tarjeta"><a href="letoyo/info/modelo-A.html"><img src="letoyo/img/jibioneras/letoyo-A.webp"><h3>Modelo A</h3><div class="equivalencia">Egi Sutte R – RO</div></a></div>
-<div class="tarjeta"><a href="letoyo/info/modelo-B.html"><img src="letoyo/img/jibioneras/letoyo-B.webp"><h3>Modelo B</h3><div class="equivalencia">Egi Sutte R – RP</div></a></div>
-<div class="tarjeta"><a href="letoyo/info/modelo-C.html"><img src="letoyo/img/jibioneras/letoyo-C.webp"><h3>Modelo C</h3><div class="equivalencia">Egi Sutte R – BRH</div></a></div>
-<div class="tarjeta"><a href="letoyo/info/modelo-D.html"><img src="letoyo/img/jibioneras/letoyo-D.webp"><h3>Modelo D</h3><div class="equivalencia">Egi Sutte R – XBP</div></a></div>
-<div class="tarjeta"><a href="letoyo/info/modelo-E.html"><img src="letoyo/img/jibioneras/letoyo-E.webp"><h3>Modelo E</h3><div class="equivalencia">Egi OH F – NIY</div></a></div>
-<div class="tarjeta"><a href="letoyo/info/modelo-F.html"><img src="letoyo/img/jibioneras/letoyo-F.webp"><h3>Modelo F</h3><div class="equivalencia">Egi OH F – NMI</div></a></div>
-<div class="tarjeta"><a href="letoyo/info/modelo-G.html"><img src="letoyo/img/jibioneras/letoyo-G.webp"><h3>Modelo G</h3><div class="equivalencia">Egi Sutte R – XBO</div></a></div>
-<div class="tarjeta"><a href="letoyo/info/modelo-H.html"><img src="letoyo/img/jibioneras/letoyo-H.webp"><h3>Modelo H</h3><div class="equivalencia">Egi OH R – NEB</div></a></div>
-<div class="tarjeta"><a href="letoyo/info/modelo-I.html"><img src="letoyo/img/jibioneras/letoyo-I.webp"><h3>Modelo I</h3><div class="equivalencia">Egi Naory Range Hunter – AJK</div></a></div>
-<div class="tarjeta"><a href="letoyo/info/modelo-J.html"><img src="letoyo/img/jibioneras/letoyo-J.webp"><h3>Modelo J</h3><div class="equivalencia">Egi Naory Range Hunter – AEBA</div></a></div>
-<div class="tarjeta"><a href="letoyo/info/modelo-K.html"><img src="letoyo/img/jibioneras/letoyo-K.webp"><h3>Modelo K</h3><div class="equivalencia">Egi Naory Range Hunter – YNK</div></a></div>
-<div class="tarjeta"><a href="letoyo/info/modelo-L.html"><img src="letoyo/img/jibioneras/letoyo-L.webp"><h3>Modelo L</h3><div class="equivalencia">Egi OH F – NQS</div></a></div>
-<div class="tarjeta"><a href="letoyo/info/modelo-M.html"><img src="letoyo/img/jibioneras/letoyo-M.webp"><h3>Modelo M</h3><div class="equivalencia">Egi Sutte R – NKN</div></a></div>
-<div class="tarjeta"><a href="letoyo/info/modelo-N.html"><img src="letoyo/img/jibioneras/letoyo-N.webp"><h3>Modelo N</h3><div class="equivalencia">Egi Sutte R – ROL</div></a></div>
-<div class="tarjeta"><a href="letoyo/info/modelo-O.html"><img src="letoyo/img/jibioneras/letoyo-O.webp"><h3>Modelo O</h3><div class="equivalencia">Egi Sutte R – NUM</div></a></div>
-<div class="tarjeta"><a href="letoyo/info/modelo-R.html"><img src="letoyo/img/jibioneras/letoyo-R.webp"><h3>Modelo R</h3><div class="equivalencia">Egi Naory Range Hunter – APG</div></a></div>
-<div class="tarjeta"><a href="letoyo/info/modelo-S.html"><img src="letoyo/img/jibioneras/letoyo-S.webp"><h3>Modelo S</h3><div class="equivalencia">Egi Naory Range Hunter – AOG</div></a></div>
+<div class="tarjeta"><a href="letoyo/info/modelo-A.html"><img src="letoyo/img/jibioneras/letoyo-A.png"><h3>Modelo A</h3><div class="equivalencia">Egi Sutte R – RO</div></a></div>
+<div class="tarjeta"><a href="letoyo/info/modelo-B.html"><img src="letoyo/img/jibioneras/letoyo-B.png"><h3>Modelo B</h3><div class="equivalencia">Egi Sutte R – RP</div></a></div>
+<div class="tarjeta"><a href="letoyo/info/modelo-C.html"><img src="letoyo/img/jibioneras/letoyo-C.png"><h3>Modelo C</h3><div class="equivalencia">Egi Sutte R – BRH</div></a></div>
+<div class="tarjeta"><a href="letoyo/info/modelo-D.html"><img src="letoyo/img/jibioneras/letoyo-D.png"><h3>Modelo D</h3><div class="equivalencia">Egi Sutte R – XBP</div></a></div>
+<div class="tarjeta"><a href="letoyo/info/modelo-E.html"><img src="letoyo/img/jibioneras/letoyo-E.png"><h3>Modelo E</h3><div class="equivalencia">Egi OH F – NIY</div></a></div>
+<div class="tarjeta"><a href="letoyo/info/modelo-F.html"><img src="letoyo/img/jibioneras/letoyo-F.png"><h3>Modelo F</h3><div class="equivalencia">Egi OH F – NMI</div></a></div>
+<div class="tarjeta"><a href="letoyo/info/modelo-G.html"><img src="letoyo/img/jibioneras/letoyo-G.png"><h3>Modelo G</h3><div class="equivalencia">Egi Sutte R – XBO</div></a></div>
+<div class="tarjeta"><a href="letoyo/info/modelo-H.html"><img src="letoyo/img/jibioneras/letoyo-H.png"><h3>Modelo H</h3><div class="equivalencia">Egi OH R – NEB</div></a></div>
+<div class="tarjeta"><a href="letoyo/info/modelo-I.html"><img src="letoyo/img/jibioneras/letoyo-I.png"><h3>Modelo I</h3><div class="equivalencia">Egi Naory Range Hunter – AJK</div></a></div>
+<div class="tarjeta"><a href="letoyo/info/modelo-J.html"><img src="letoyo/img/jibioneras/letoyo-J.png"><h3>Modelo J</h3><div class="equivalencia">Egi Naory Range Hunter – AEBA</div></a></div>
+<div class="tarjeta"><a href="letoyo/info/modelo-K.html"><img src="letoyo/img/jibioneras/letoyo-K.png"><h3>Modelo K</h3><div class="equivalencia">Egi Naory Range Hunter – YNK</div></a></div>
+<div class="tarjeta"><a href="letoyo/info/modelo-L.html"><img src="letoyo/img/jibioneras/letoyo-L.png"><h3>Modelo L</h3><div class="equivalencia">Egi OH F – NQS</div></a></div>
+<div class="tarjeta"><a href="letoyo/info/modelo-M.html"><img src="letoyo/img/jibioneras/letoyo-M.png"><h3>Modelo M</h3><div class="equivalencia">Egi Sutte R – NKN</div></a></div>
+<div class="tarjeta"><a href="letoyo/info/modelo-N.html"><img src="letoyo/img/jibioneras/letoyo-N.png"><h3>Modelo N</h3><div class="equivalencia">Egi Sutte R – ROL</div></a></div>
+<div class="tarjeta"><a href="letoyo/info/modelo-O.html"><img src="letoyo/img/jibioneras/letoyo-O.png"><h3>Modelo O</h3><div class="equivalencia">Egi Sutte R – NUM</div></a></div>
+<div class="tarjeta"><a href="letoyo/info/modelo-R.html"><img src="letoyo/img/jibioneras/letoyo-R.png"><h3>Modelo R</h3><div class="equivalencia">Egi Naory Range Hunter – APG</div></a></div>
+<div class="tarjeta"><a href="letoyo/info/modelo-S.html"><img src="letoyo/img/jibioneras/letoyo-S.png"><h3>Modelo S</h3><div class="equivalencia">Egi Naory Range Hunter – AOG</div></a></div>
 <div class="tarjeta"><a href="letoyo/info/modeloNB-A.html"><img src="letoyo/img/jibioneras/letoyoNB-A.png"><h3>Modelo Neon Bright-A</h3><div class="equivalencia">Egi OH K Neon Bright PKB</div></a></div>
 <div class="tarjeta"><a href="letoyo/info/modeloNB-B.html"><img src="letoyo/img/jibioneras/letoyoNB-B.png"><h3>Modelo Neon Bright-B</h3><div class="equivalencia">Egi OH K Neon Bright MK</div></a></div>
 <div class="tarjeta"><a href="letoyo/info/modeloNB-C.html"><img src="letoyo/img/jibioneras/letoyoNB-C.png"><h3>Modelo Neon Bright-C</h3><div class="equivalencia">Egi OH K Neon Bright KKT</div></a></div>

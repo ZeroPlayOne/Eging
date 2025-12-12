@@ -21,13 +21,50 @@
   gtag('config', 'G-TFX11RL5QP');
 </script>
 
-  <!-- SEO headings invisibles -->
-  <style>
-    .seo-heading {
-      position: absolute;
-      left: -9999px;
-    }
-  </style>
+
+<style>
+.grid-categorias {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+    padding: 40px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.tarjeta {
+    background: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform .3s;
+}
+
+.tarjeta:hover { transform: scale(1.05); }
+
+.tarjeta img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.tarjeta h3 {
+    padding: 15px 10px;
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.tarjeta a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+</style>
+
+
+
 </head>
 
 <body>
@@ -53,7 +90,7 @@
                     <li><a href="../senuelos/otros.html">OTROS</a></li>
                 </ul>
             </li>
-            <li><a href="../componentes.html">Componentes</a></li>
+            <li><a href="../componentes.html" class="activo">Componentes</a></li>
             <li><a href="../color-egis.html">Color Egis</a></li>
             <li><a href="../acerca.html">Acerca de</a></li>
         </ul>
@@ -61,27 +98,25 @@
 </header>
 
 <section class="hero">
-<h1 class="section-title">Carretes de Pesca | Componentes</h1>
+  <h1 class="section-title">Carretes de Pesca | Componentes</h1>
 </section>
 
+<!-- GRID DE TARJETAS -->
+<section class="grid-categorias">
 
-<!-- GRID DE COMPONENTES -->
-<section class="menu-central">
-
-  <h2 class="seo-heading">Carretes de pesca para eging y spinning</h2>
-
-  <!-- REVIEW 1: Carrete Sougayilang -->
-  <a href="carretes/Carrete-Pesca-Sougayilang/Carrete-Pesca-Sougayilang.html" class="grid-item cuadrado">
-    <img src="carretes/Carrete-Pesca-Sougayilang/Carrete-Pesca-Sougayilang.png" alt="Carrete Sougayilang para pesca de calamar">
-    <span class="titulo-grid">Carrete Pesca Sougayilang</span>
-  </a>
+  <!-- Carrete Sougayilang -->
+  <div class="tarjeta">
+    <a href="carretes/Carrete-Pesca-Sougayilang/Carrete-Pesca-Sougayilang.html">
+      <img src="carretes/Carrete-Pesca-Sougayilang/Carrete-Pesca-Sougayilang.png" alt="Carrete Sougayilang para pesca de calamar">
+      <h3>Carrete Pesca Sougayilang</h3>
+    </a>
+  </div>
+  
 
 </section>
-
 
 <!-- TEXTO SEO FINAL CON ENLACES CONTEXTUALES -->
 <section class="descripcion-seo">
-
   <p>
     En <strong>Egis Low Cost</strong> seleccionamos los mejores <strong>carretes para eging, spinning ligero y pesca del calamar</strong>, buscando siempre un punto intermedio entre calidad, suavidad y precio ajustado. 
     Los carretes aquí mostrados son opciones probadas, con valoraciones positivas y gran rendimiento para pescadores principiantes y avanzados.
@@ -98,9 +133,7 @@
     <a href="../componentes/accesorios.html">Accesorios de pesca</a>, 
     donde encontrarás linternas UV, mosquetones, fundas y más herramientas útiles para tus jornadas de eging.
   </p>
-
 </section>
-
 
 <footer>
     <p>© 2025 Egis Low Cost</p>
