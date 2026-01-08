@@ -18,6 +18,7 @@
 
     <link rel="stylesheet" href="../../style/styles.css">
     <link rel="icon" type="image/png" href="../../images/icono.png">
+
 <style>
 .hero h2 { display:none; }
 
@@ -33,7 +34,7 @@
 .tarjeta {
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* fuerza que la franja esté abajo */
+    justify-content: space-between;
     background: #ffffff;
     border-radius: 15px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -46,11 +47,10 @@
 
 .tarjeta img {
     width: 100%;
-    height: auto; /* mantiene la proporción real */
-    object-fit: contain; /* asegura que se vea completa */
+    height: auto;
+    object-fit: contain;
 }
 
-/* FRANJA AMARILLA FINAL */
 .tarjeta .equivalencia {
     background: #ffd600;
     color: #333;
@@ -58,8 +58,7 @@
     font-size: 0.95rem;
     font-weight: 600;
     border-top: 1px solid rgba(0,0,0,0.15);
-	margin-top: auto
-	justify-content: space-between
+    margin-top: auto;
 }
 
 .tarjeta h3 {
@@ -73,20 +72,18 @@
 .section-title {
     font-size: 2rem;
     text-align: center;
-    margin: 60px 0 20px;
-    position: relative;
+    margin: 40px 0 15px;
     font-weight: 700;
     color: #333;
 }
 
-.section-title::after {
-    content: "";
-    width: 80px;
-    height: 4px;
-    background: #0099cc;
-    display: block;
-    margin: 10px auto 0;
-    border-radius: 10px;
+.descripcion-principal {
+    max-width: 900px;
+    margin: 0 auto 30px;
+    text-align: center;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: #444;
 }
 
 .comprar-contenedor {
@@ -94,6 +91,7 @@
     justify-content: center;
     gap: 20px;
     margin: 25px 0 50px;
+    flex-wrap: wrap;
 }
 
 .btn-comprar {
@@ -105,9 +103,6 @@
     color: white;
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     transition: transform .15s, box-shadow .15s;
-}
-
-.opcion {
     background: linear-gradient(90deg, #ff2e63, #ff1744);
 }
 
@@ -124,31 +119,44 @@
     border-radius: 8px;
     font-weight: 600;
     font-size: 1rem;
+    max-width: 900px;
+    margin: 25px auto;
 }
 
-/* Bloque título + info-box lado a lado */
-.section-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap;
-    margin-bottom: 25px;
+.info-extra {
+    max-width: 900px;
+    margin: 40px auto;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #444;
 }
-
-.section-header .section-title { margin: 0; }
-.section-header .info-box { margin: 0; padding: 8px 14px; font-size: 1rem; }
 </style>
 
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TFX11RL5QP"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-TFX11RL5QP');
-  </script>
-  
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TFX11RL5QP"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-TFX11RL5QP');
+</script>
+
+<!-- Schema FAQ -->
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "FAQPage",
+"mainEntity": [{
+  "@type": "Question",
+  "name": "¿Los egis Squid King son equivalentes a Yamashita?",
+  "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Los Squid King presentan colores y acabados muy similares a los Yamashita Egi Sutte R, siendo una alternativa económica para la pesca de calamar y sepia."
+  }
+}]
+}
+</script>
+
 </head>
 
 <body>
@@ -182,132 +190,147 @@
 </header>
 
 <section class="hero">
-    <img width="200px" src="squidking/squidking.png" alt="Squid King" class="hero-img">
+<img src="squidking/squidking.png" alt="Egis Squid King económicos" width="200">
 </section>
-<br>
-<div class="section-header">
-  <p class="info-box">Similitud con Yamashita</p>
+
+<h1 class="section-title">Squid King – Alternativas económicas a Yamashita</h1>
+
+<p class="descripcion-principal">
+Los egis Squid King destacan por ofrecer una alternativa económica a los Yamashita Egi Sutte R,
+manteniendo colores, acción y efectividad en la pesca de calamar y sepia.
+</p>
+
+<div class="info-box">
+Algunos enlaces pueden ser afiliados. Esto no afecta al precio final y ayuda a mantener esta web.
 </div>
 
 <section class="grid-contenedor">
 
-    <div class="tarjeta">
-        <a href="https://s.click.aliexpress.com/e/_c4mK45wt" target="_blank">
-            <img src="squidking/img/squidking-A.png" alt="Squid King A">
-            <h3>Modelo A</h3>
-            <div class="equivalencia">Egi Sutte R – RP</div>
-        </a>
-    </div>
+<!-- TARJETAS -->
+<div class="tarjeta"><a href="https://s.click.aliexpress.com/e/_c4mK45wt" target="_blank" rel="nofollow noopener">
+<img src="squidking/img/squidking-A.png" alt="Egi Squid King modelo A equivalente Yamashita RP">
+<h3>Modelo A</h3><div class="equivalencia">Egi Sutte R – RP</div></a></div>
 
-    <div class="tarjeta">
-        <a href="https://s.click.aliexpress.com/e/_c4mK45wt" target="_blank">
-            <img src="squidking/img/squidking-B.png" alt="Squid King B">
-            <h3>Modelo B</h3>
-            <div class="equivalencia">Egi Sutte R – NDX</div>
-        </a>
-    </div>
+<div class="tarjeta"><a href="https://s.click.aliexpress.com/e/_c4mK45wt" target="_blank" rel="nofollow noopener">
+<img src="squidking/img/squidking-B.png" alt="Egi Squid King modelo B equivalente Yamashita NDX">
+<h3>Modelo B</h3><div class="equivalencia">Egi Sutte R – NDX</div></a></div>
 
-    <div class="tarjeta">
-        <a href="https://s.click.aliexpress.com/e/_c4mK45wt" target="_blank">
-            <img src="squidking/img/squidking-C.png" alt="Squid King C">
-            <h3>Modelo C</h3>
-            <div class="equivalencia">Egi Sutte R – RO</div>
-        </a>
-    </div>
+<div class="tarjeta"><a href="https://s.click.aliexpress.com/e/_c4mK45wt" target="_blank" rel="nofollow noopener">
+<img src="squidking/img/squidking-C.png" alt="Egi Squid King modelo C equivalente Yamashita RO">
+<h3>Modelo C</h3><div class="equivalencia">Egi Sutte R – RO</div></a></div>
 
-    <div class="tarjeta">
-        <a href="https://s.click.aliexpress.com/e/_c4mK45wt" target="_blank">
-            <img src="squidking/img/squidking-D.png" alt="Squid King D">
-            <h3>Modelo D</h3>
-            <div class="equivalencia">Egi Sutte R – BRH</div>
-        </a>
-    </div>
+<div class="tarjeta"><a href="https://s.click.aliexpress.com/e/_c4mK45wt" target="_blank" rel="nofollow noopener">
+<img src="squidking/img/squidking-D.png" alt="Egi Squid King modelo D equivalente Yamashita BRH">
+<h3>Modelo D</h3><div class="equivalencia">Egi Sutte R – BRH</div></a></div>
 
-    <div class="tarjeta">
-        <a href="https://s.click.aliexpress.com/e/_c4mK45wt" target="_blank">
-            <img src="squidking/img/squidking-E.png" alt="Squid King E">
-            <h3>Modelo E</h3>
-            <div class="equivalencia">Egi Sutte R – NIY</div>
-        </a>
-    </div>
+<div class="tarjeta"><a href="https://s.click.aliexpress.com/e/_c4mK45wt" target="_blank" rel="nofollow noopener">
+<img src="squidking/img/squidking-E.png" alt="Egi Squid King modelo E equivalente Yamashita NIY">
+<h3>Modelo E</h3><div class="equivalencia">Egi Sutte R – NIY</div></a></div>
 
-    <div class="tarjeta">
-        <a href="https://s.click.aliexpress.com/e/_c3m2rudx" target="_blank">
-            <img src="squidking/img/squidking-F.png" alt="Squid King F">
-            <h3>Modelo F</h3>
-            <div class="equivalencia">Egi Sutte R – RWR</div>
-        </a>
-    </div>
+<div class="tarjeta"><a href="https://s.click.aliexpress.com/e/_c3m2rudx" target="_blank" rel="nofollow noopener">
+<img src="squidking/img/squidking-F.png" alt="Egi Squid King modelo F equivalente Yamashita RWR">
+<h3>Modelo F</h3><div class="equivalencia">Egi Sutte R – RWR</div></a></div>
 
-    <div class="tarjeta">
-        <a href="https://s.click.aliexpress.com/e/_c3m2rudx" target="_blank">
-            <img src="squidking/img/squidking-G.png" alt="Squid King G">
-            <h3>Modelo G</h3>
-            <div class="equivalencia">Egi Sutte R – RRH</div>
-        </a>
-    </div>
+<div class="tarjeta"><a href="https://s.click.aliexpress.com/e/_c3m2rudx" target="_blank" rel="nofollow noopener">
+<img src="squidking/img/squidking-G.png" alt="Egi Squid King modelo G equivalente Yamashita RRH">
+<h3>Modelo G</h3><div class="equivalencia">Egi Sutte R – RRH</div></a></div>
 
-    <div class="tarjeta">
-        <a href="https://s.click.aliexpress.com/e/_c3m2rudx" target="_blank">
-            <img src="squidking/img/squidking-H.png" alt="Squid King H">
-            <h3>Modelo H</h3>
-            <div class="equivalencia">Egi Sutte R – RWG</div>
-        </a>
-    </div>
+<div class="tarjeta"><a href="https://s.click.aliexpress.com/e/_c3m2rudx" target="_blank" rel="nofollow noopener">
+<img src="squidking/img/squidking-H.png" alt="Egi Squid King modelo H equivalente Yamashita RWG">
+<h3>Modelo H</h3><div class="equivalencia">Egi Sutte R – RWG</div></a></div>
 
-    <div class="tarjeta">
-        <a href="https://s.click.aliexpress.com/e/_c3m2rudx" target="_blank">
-            <img src="squidking/img/squidking-I.png" alt="Squid King I">
-            <h3>Modelo I</h3>
-            <div class="equivalencia">Egi Sutte R – RWP</div>
-        </a>
-    </div>
+<div class="tarjeta"><a href="https://s.click.aliexpress.com/e/_c3m2rudx" target="_blank" rel="nofollow noopener">
+<img src="squidking/img/squidking-I.png" alt="Egi Squid King modelo I equivalente Yamashita RWP">
+<h3>Modelo I</h3><div class="equivalencia">Egi Sutte R – RWP</div></a></div>
 
-    <div class="tarjeta">
-        <a href="https://s.click.aliexpress.com/e/_c3m2rudx" target="_blank">
-            <img src="squidking/img/squidking-J.png" alt="Squid King J">
-            <h3>Modelo J</h3>
-            <div class="equivalencia">Egi Sutte R – RWO</div>
-        </a>
-    </div>
+<div class="tarjeta"><a href="https://s.click.aliexpress.com/e/_c3m2rudx" target="_blank" rel="nofollow noopener">
+<img src="squidking/img/squidking-J.png" alt="Egi Squid King modelo J equivalente Yamashita RWO">
+<h3>Modelo J</h3><div class="equivalencia">Egi Sutte R – RWO</div></a></div>
 
-    <div class="tarjeta">
-        <a href="https://s.click.aliexpress.com/e/_c3krR73L" target="_blank">
-            <img src="squidking/img/squidking-K.png" alt="Squid King K">
-            <h3>Modelo K</h3>
-            <div class="equivalencia">Egi Sutte R – ROL</div>
-        </a>
-    </div>
+<div class="tarjeta"><a href="https://s.click.aliexpress.com/e/_c3krR73L" target="_blank" rel="nofollow noopener">
+<img src="squidking/img/squidking-K.png" alt="Egi Squid King modelo K equivalente Yamashita ROL">
+<h3>Modelo K</h3><div class="equivalencia">Egi Sutte R – ROL</div></a></div>
 
-    <div class="tarjeta">
-        <a href="https://s.click.aliexpress.com/e/_c3krR73L" target="_blank">
-            <img src="squidking/img/squidking-L.png" alt="Squid King L">
-            <h3>Modelo L</h3>
-            <div class="equivalencia">Egi Sutte R – APG</div>
-        </a>
-    </div>
+<div class="tarjeta"><a href="https://s.click.aliexpress.com/e/_c3krR73L" target="_blank" rel="nofollow noopener">
+<img src="squidking/img/squidking-L.png" alt="Egi Squid King modelo L equivalente Yamashita APG">
+<h3>Modelo L</h3><div class="equivalencia">Egi Sutte R – APG</div></a></div>
 
-    <div class="tarjeta">
-        <a href="https://s.click.aliexpress.com/e/_c3krR73L" target="_blank">
-            <img src="squidking/img/squidking-M.png" alt="Squid King M">
-            <h3>Modelo M</h3>
-            <div class="equivalencia">Egi Sutte R – AOG</div>
-        </a>
-    </div>
+<div class="tarjeta"><a href="https://s.click.aliexpress.com/e/_c3krR73L" target="_blank" rel="nofollow noopener">
+<img src="squidking/img/squidking-M.png" alt="Egi Squid King modelo M equivalente Yamashita AOG">
+<h3>Modelo M</h3><div class="equivalencia">Egi Sutte R – AOG</div></a></div>
+
+<div class="tarjeta"><a href="https://s.click.aliexpress.com/e/_c3Nsquld" target="_blank" rel="nofollow noopener">
+<img src="squidking/img/squidking-Sutte-Basic-A.png" alt="Egi Sutte Basic Squid King modelo A equivalente Yamashita Egi OH Live LNW">
+<h3>Sutte Basic A</h3>
+<div class="equivalencia">Egi OH Live – LNW</div>
+</a></div>
+
+<div class="tarjeta"><a href="https://s.click.aliexpress.com/e/_c3Nsquld" target="_blank" rel="nofollow noopener">
+<img src="squidking/img/squidking-Sutte-Basic-B.png" alt="Egi Sutte Basic Squid King modelo B equivalente Yamashita Egi OH Live ORG">
+<h3>Sutte Basic B</h3>
+<div class="equivalencia">Egi OH Live – ORG</div>
+</a></div>
+
+<div class="tarjeta"><a href="https://s.click.aliexpress.com/e/_c3Nsquld" target="_blank" rel="nofollow noopener">
+<img src="squidking/img/squidking-Sutte-Basic-C.png" alt="Egi Sutte Basic Squid King modelo C equivalente Yamashita Egi OH Live MMC">
+<h3>Sutte Basic C</h3>
+<div class="equivalencia">Egi OH Live – MMC</div>
+</a></div>
+
+<div class="tarjeta"><a href="https://s.click.aliexpress.com/e/_c3Nsquld" target="_blank" rel="nofollow noopener">
+<img src="squidking/img/squidking-Sutte-Basic-D.png" alt="Egi Sutte Basic Squid King modelo D equivalente Yamashita Egi OH Live PKG">
+<h3>Sutte Basic D</h3>
+<div class="equivalencia">Egi OH Live – PKG</div>
+</a></div>
+
+<div class="tarjeta"><a href="https://s.click.aliexpress.com/e/_c3Nsquld" target="_blank" rel="nofollow noopener">
+<img src="squidking/img/squidking-Sutte-Basic-E.png" alt="Egi Sutte Basic Squid King modelo E equivalente Yamashita Egi OH Live TTA">
+<h3>Sutte Basic E</h3>
+<div class="equivalencia">Egi OH Live – TTA</div>
+</a></div>
+
+<div class="tarjeta"><a href="https://s.click.aliexpress.com/e/_c3Nsquld" target="_blank" rel="nofollow noopener">
+<img src="squidking/img/squidking-Sutte-Basic-F.png" alt="Egi Sutte Basic Squid King modelo F equivalente Yamashita Egi OH Live BLP">
+<h3>Sutte Basic F</h3>
+<div class="equivalencia">Egi OH Live – BLP</div>
+</a></div>
+
+<div class="tarjeta"><a href="https://s.click.aliexpress.com/e/_c3Nsquld" target="_blank" rel="nofollow noopener">
+<img src="squidking/img/squidking-Sutte-Basic-G.png" alt="Egi Sutte Basic Squid King modelo G equivalente Yamashita Egi OH Live OLM">
+<h3>Sutte Basic G</h3>
+<div class="equivalencia">Egi OH Live – OLM</div>
+</a></div>
+
+<div class="tarjeta"><a href="https://s.click.aliexpress.com/e/_c3Nsquld" target="_blank" rel="nofollow noopener">
+<img src="squidking/img/squidking-Sutte-Basic-H.png" alt="Egi Sutte Basic Squid King modelo H equivalente Yamashita Egi OH Live TTI">
+<h3>Sutte Basic H</h3>
+<div class="equivalencia">Egi OH Live – TTI</div>
+</a></div>
+
+
 
 </section>
 
 <div class="comprar-contenedor">
-    <a class="btn-comprar opcion" href="https://s.click.aliexpress.com/e/_c4mK45wt" rel="nofollow noopener noreferrer" target="_blank">🛒 Comprar opción 1</a>
-    <a class="btn-comprar opcion" href="https://s.click.aliexpress.com/e/_c3m2rudx" rel="nofollow noopener noreferrer" target="_blank">🛒 Comprar opción 2</a>
-    <a class="btn-comprar opcion" href="https://s.click.aliexpress.com/e/_c3Ablsp3" rel="nofollow noopener noreferrer" target="_blank">🛒 Comprar opción 3</a>
-    <a class="btn-comprar opcion" href="https://s.click.aliexpress.com/e/_c3krR73L" rel="nofollow noopener noreferrer" target="_blank">🛒 Comprar opción 4</a>
-    <a class="btn-comprar opcion" href="https://s.click.aliexpress.com/e/_c4nxkQFX" rel="nofollow noopener noreferrer" target="_blank">🛒 Comprar opción 5</a>
-    <a class="btn-comprar opcion" href="https://s.click.aliexpress.com/e/_c4NQwq8D" rel="nofollow noopener noreferrer" target="_blank">🛒 Comprar opción 6</a>
+<a class="btn-comprar" href="https://s.click.aliexpress.com/e/_c4mK45wt" target="_blank" rel="nofollow noopener">🛒 Comprar opción 1</a>
+<a class="btn-comprar" href="https://s.click.aliexpress.com/e/_c3m2rudx" target="_blank" rel="nofollow noopener">🛒 Comprar opción 2</a>
+<a class="btn-comprar" href="https://s.click.aliexpress.com/e/_c3Ablsp3" target="_blank" rel="nofollow noopener">🛒 Comprar opción 3</a>
+<a class="btn-comprar" href="https://s.click.aliexpress.com/e/_c3krR73L" target="_blank" rel="nofollow noopener">🛒 Comprar opción 4</a>
+<a class="btn-comprar" href="https://s.click.aliexpress.com/e/_c4nxkQFX" target="_blank" rel="nofollow noopener">🛒 Comprar opción 5</a>
+<a class="btn-comprar" href="https://s.click.aliexpress.com/e/_c4NQwq8D" target="_blank" rel="nofollow noopener">🛒 Comprar opción 6</a>
 </div>
 
+<section class="info-extra">
+<h2>¿Por qué elegir egis Squid King?</h2>
+<p>
+Los Squid King son ideales para pescadores que buscan egis económicos,
+con buena acción de nado y colores equivalentes a Yamashita,
+perfectos para calamar y sepia tanto desde costa como embarcación.
+</p>
+</section>
+
 <footer>
-    <p>© 2026 Egis Low Cost</p>
+<p>© 2026 Egis Low Cost</p>
 </footer>
 
 </body>
