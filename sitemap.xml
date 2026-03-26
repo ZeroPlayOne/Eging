@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org">
-
-  <!-- Página principal: Máxima prioridad tras los cambios -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Página principal -->
   <url>
-    <loc>https://www.egislowcost.es</loc>
+    <loc>https://www.egislowcost.es/</loc>
     <lastmod>2026-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-  <!-- Secciones de Menú: Prioridad alta para indexar los nuevos Canonicals -->
+  <!-- Secciones de Menú -->
   <url>
     <loc>https://www.egislowcost.es/menu/senuelos.html</loc>
     <lastmod>2026-03-26</lastmod>
@@ -33,8 +32,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
-
-  <!-- Marcas de Jibioneras: Clave para captar tráfico específico -->
+  <!-- Marcas de Jibioneras -->
   <url>
     <loc>https://www.egislowcost.es/menu/senuelos/yamashita.html</loc>
     <lastmod>2026-03-26</lastmod>
@@ -77,8 +75,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
-
-  <!-- Novedades: Las páginas que más convierten -->
+  <!-- Novedades -->
   <url>
     <loc>https://www.egislowcost.es/novedades/Jibionera-LOW-COST/Jibionera-LOW-COST.html</loc>
     <lastmod>2026-03-26</lastmod>
