@@ -1,11 +1,18 @@
-// Determinar la profundidad de la página
-let depth = window.location.pathname.split("/").length - 2;
-let prefix = "../".repeat(depth);
+// js/menu.js
+async function cargarMenu() {
+    try {
+        const respuesta = await fetch('/js/menu.html'); // ruta desde la raíz
+        if (!respuesta.ok) throw new Error("No se pudo cargar el menú");
+        const html = await respuesta.text();
+        document.getElementById('menu-contenedor').innerHTML = html;
+    } catch (error) {
+        console.error(error);
+    }
+}
 
-// Cargar menú
-fetch(prefix + "partials/menu.html")
-  .then(res => res.text())
-  .then(html => {
-    document.getElementById("menu").innerHTML = html;
-  })
-  .catch(err => console.error("Error cargando menú:", err));
+// Ejecutar al cargar la página
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', cargarMenu);
+} else {
+    cargarMenu();
+}
