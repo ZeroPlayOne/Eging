@@ -10,7 +10,7 @@
 
   <!-- Open Graph -->
   <meta property="og:title" content="La Democratización del Eging: Clones vs Japoneses">
-  <meta property="og:image" content="/images/comparativa-egis.webp">
+  <meta property="og:image" content="https://www.egislowcost.es/images/logo.webp">
 
     <!-- Favicon y CSS -->
     <link rel="icon" type="image/png" sizes="32x32" href="/images/icono.webp">
@@ -20,14 +20,13 @@
 
 <header>
   <div class="logo-contenedor">
-    <img src="/images/logo.webp" alt="Egis Low Cost Logo" class="logo-img">
+    <img src="/images/logo.webp" alt="Egis Low Cost" class="logo-img">
     <span class="logo-texto">Egis Low Cost</span>
   </div>
   <div id="menu-contenedor"></div>
-  <script src="/js/menu.js"></script>
+  <script src="/js/menu.js" defer></script>
 </header>
-
-<!-- HERO (usa tu clase existente) -->
+<main>
 <section class="hero">
   <h1>La Democratización del Eging</h1>
   <h2>Por qué los "Super-Clones" de 3€ están revolucionando la pesca de calamares</h2>
@@ -36,9 +35,14 @@
   </p>
 </section>
 
-<!-- CONTENIDO PRINCIPAL (usa tu bloque SEO) -->
 <section class="descripcion-seo">
 
+<div style="text-align: center;">
+  <img src="pescador-egis-a-cada-mano.webp" 
+       alt="Pescador comparando señuelos eging baratos de AliExpress y marcas japonesas" 
+       loading="lazy" 
+       style="max-width: 50%; height: auto; border-radius: 8px;">
+</div>
   <h2 class="section-title">Un cambio silencioso en el eging</h2>
   <p>
     Durante años, el eging ha estado dominado por marcas japonesas de alta gama, donde la calidad, el equilibrio y el diseño marcaban una diferencia clara.
@@ -61,9 +65,17 @@
 
 </section>
 
-<!-- BLOQUE DESTACADO (usa info-box) -->
+<!-- BLOQUE DESTACADO -->
 <section class="info-box">
-  <h2>¿Qué le falta para ser un egi premium?</h2>
+
+<div style="text-align: center;">
+  <img src="control-de-calidad.webp" 
+       alt="Diferencias de acabado en egis low cost" 
+       loading="lazy" 
+       style="max-width: 50%; height: auto; border-radius: 8px;">
+</div>
+
+  <h3>¿Qué le falta para ser un egi premium?</h3>
   <p>
     Principalmente, el <strong>control de calidad</strong>.
   </p>
@@ -72,11 +84,11 @@
   </p>
 </section>
 
-<!-- COMPARATIVA (usa tu tabla global) -->
+<!-- COMPARATIVA -->
 <section class="descripcion-seo">
 
   <h2 class="section-title">Clon vs Premium</h2>
-
+<div style="overflow-x: auto;">
   <table>
     <thead>
       <tr>
@@ -113,7 +125,7 @@
       </tr>
     </tbody>
   </table>
-
+</div>
 </section>
 
 <!-- CONSEJOS -->
@@ -130,6 +142,13 @@
 
 <!-- ESTRATEGIA -->
 <section class="descripcion-seo">
+
+<div style="text-align: center;">
+  <img src="sin-miedo-a-perder.webp" 
+       alt="Pesca de calamares en zonas rocosas con egis económicos" 
+       loading="lazy" 
+       style="max-width: 50%; height: auto; border-radius: 8px;">
+</div>
 
   <h2 class="section-title">La verdadera ventaja: pescar sin miedo</h2>
 
@@ -172,10 +191,10 @@
   </p>
 
 </section>
-
+</main>
 <!-- Footer y Cookies -->
 <div id="footer-contenedor"></div>
-<script src="/js/footer.js"></script>
+<script src="/js/footer.js" defer></script>
 
 </body>
 </html>
